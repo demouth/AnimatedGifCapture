@@ -8,3 +8,5 @@ Capture visible content of a tab, desktop screen, or selected  application windo
 [Chrome Web Store - Animated Gif Capture](https://chrome.google.com/webstore/detail/animated-gif-capture/aecmckhhfknljgicfkpbinfkpnijehcm?hl=en)
 
 [Chrome Web Store - Animated Gif Capture (Japanese)](https://chrome.google.com/webstore/detail/animated-gif-capture/aecmckhhfknljgicfkpbinfkpnijehcm?hl=ja)
+
+[Blog (Only Japanese)](http://demouth.hatenablog.com/entry/2014/05/12/072512)
