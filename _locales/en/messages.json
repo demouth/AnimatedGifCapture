@@ -1,0 +1,134 @@
+{
+  "extName":{
+    "message": "Animated Gif Capture"
+  },
+  "extDescription":{
+    "message": "Capture visible content of a tab, desktop screen, or selected  application window as a animated GIF image."
+  },
+  "optionPageTitle":{
+    "message":"option settings"
+  },
+  "captureFramerate":{
+    "message":"Frame Rate"
+  },
+  "captureFramerate_limit":{
+    "message":"Cancel the limitation."
+  },
+  "captureFramerate_note":{
+    "message":"This parameter is the number of shooting per-second. When Increasing the value of this parameter, the number of shots per second will increase. But  the load on the PC will increase at the same time. Please note that if the performance of the PC is low."
+  },
+  "captureSeconds":{
+    "message":"Recording Seconds"
+  },
+  "captureSeconds_limit":{
+    "message":"Cancel the limitation."
+  },
+  "captureSeconds_note":{
+    "message":"This parameter is the recording time. When Increasing the value of this parameter, the recording time will increase. But  the load on the PC will increase at the same time. Please note that if the performance of the PC is low."
+  },
+  "scale":{
+    "message":"Capturing Image Size"
+  },
+  "scale_limit":{
+    "message":"Cancel the limitation."
+  },
+  "scale_note":{
+    "message":"This parameter is adjusted value resolution of the gif image. When Increasing the value of this parameter, the resolution of the gif image will increase. But  the load on the PC will increase at the same time. Please note that if the performance of the PC is low."
+  },
+  "repeat":{
+    "message":"Repeat Count"
+  },
+  "repeat_forever":{
+    "message":"Infinite loop."
+  },
+  "filename":{
+    "message":"File Name"
+  },
+  "filename_example":{
+    "message":"Example:"
+  },
+  "filename_directives":{
+    "message":"Directives:"
+  },
+  "filename_ex_Y":{
+    "message":"Year. ex:2014"
+  },
+  "filename_ex_M":{
+    "message":"Month. ex:01"
+  },
+  "filename_ex_D":{
+    "message":"Day. ex:31"
+  },
+  "filename_ex_H":{
+    "message":"Hours. ex:09"
+  },
+  "filename_ex_I":{
+    "message":"Minutes. ex:59"
+  },
+  "filename_ex_S":{
+    "message":"Seconds. ex:59"
+  },
+  "captureType":{
+    "message":"Image Photograph Method"
+  },
+  "captureType1":{
+    "message":"Captures the active tab"
+  },
+  "captureType2":{
+    "message":"Captures the active tab (use MediaStream API)"
+  },
+  "captureType3":{
+    "message":"Capture the selected window or desktop"
+  },
+  "captureType1_note":{
+    "message":"Captures the visible area of the currently active tab. Image is relatively high quality."
+  },
+  "captureType2_note":{
+    "message":"Captures the visible area of the currently active tab. It is a relatively fast."
+  },
+  "captureType3_note":{
+    "message":"Desktop Capture API that can be used to capture content of screen. Shows desktop media picker UI with the specified set of sources."
+  },
+  "reset":{
+    "message":"Initialize the Settings"
+  },
+  "helpTitle":{
+    "message":"How To Use"
+  },
+  "help_t_1" : {
+    "message":"1. Click the Icon"
+  },
+  "help_d_1_1" : {
+    "message":"To start shooting when click on this icon."
+  },
+  "help_d_1_2" : {
+    "message":"This window will be displayed if you have selected the \"Image Photograph Method\" in \"Capture the selected window or desktop\". Select the window you wish to capture from this."
+  },
+  "help_d_1_image" : {
+    "message":"choose_en.png"
+  },
+  "help_t_2" : {
+    "message":"2. Capturing Begins"
+  },
+  "help_d_2_1" : {
+    "message":"Capturing is started by clicking on the icon, the icon will change as like this. Capturing will be completed progress bar is full."
+  },
+  "help_t_3" : {
+    "message":"3. Capture is Completed"
+  },
+  "help_d_3_1" : {
+    "message":"Recordings are converted into animated gif recording is finished. Please keep in mind that the time required for this conversion process also increases When File size of gif file is increased."
+  },
+  "help_d_3_2" : {
+    "message":"Download of a gif image will be begun when a progress bar is full."
+  },
+  "help_t_4" : {
+    "message":"Display the Option Setting"
+  },
+  "help_d_4_1" : {
+    "message":"Context menu is displayed when you right-click the icon. Click an \"Option\" from this menu, option setting screen is displayed."
+  },
+  "help_d_4_image" : {
+    "message":"option_en.png"
+  }
+}

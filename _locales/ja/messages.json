@@ -1,0 +1,134 @@
+{
+  "extName":{
+    "message": "Animated Gif Capture - アニメーションGifキャプチャ"
+  },
+  "extDescription":{
+    "message": "タブやウィンドウ、デスクトップをキャプチャーし、アニメーションGifに変換する拡張機能です。"
+  },
+  "optionPageTitle":{
+    "message":"機能設定"
+  },
+  "captureFramerate":{
+    "message":"フレーム数"
+  },
+  "captureFramerate_limit":{
+    "message":"上限解除"
+  },
+  "captureFramerate_note":{
+    "message":"このパラメータの数値を上げると1秒間あたりの撮影枚数が増えますが、同時にPCへの負荷が増します。PCのスペックが低い場合は上げ過ぎにご注意ください。PCの性能によってはここで設定した通りの撮影枚数にならない可能性があります。"
+  },
+  "captureSeconds":{
+    "message":"撮影秒数"
+  },
+  "captureSeconds_limit":{
+    "message":"上限解除"
+  },
+  "captureSeconds_note":{
+    "message":"このパラメータの数値を上げると撮影時間が増えますが、同時にPCへの負荷が増します。PCのスペックが低い場合は上げ過ぎにご注意ください。PCの性能によってはここで設定した通りの撮影秒数にならない可能性があります。"
+  },
+  "scale":{
+    "message":"画像サイズ"
+  },
+  "scale_limit":{
+    "message":"上限解除"
+  },
+  "scale_note":{
+    "message":"このパラメータの数値を上げるとgif画像の解像度が高まりますが、同時にPCへの負荷が増します。PCのスペックが低い場合は上げ過ぎにご注意ください。"
+  },
+  "repeat":{
+    "message":"ループ回数"
+  },
+  "helpTitle":{
+    "message":"How to use"
+  },
+  "repeat_forever":{
+    "message":"無限ループ"
+  },
+  "filename":{
+    "message":"ファイル名"
+  },
+  "filename_example":{
+    "message":"例："
+  },
+  "filename_directives":{
+    "message":"Directives"
+  },
+  "filename_ex_Y":{
+    "message":"年 例:2014"
+  },
+  "filename_ex_M":{
+    "message":"月 例:01"
+  },
+  "filename_ex_D":{
+    "message":"日 例:31"
+  },
+  "filename_ex_H":{
+    "message":"時 例:09"
+  },
+  "filename_ex_I":{
+    "message":"分 例:59"
+  },
+  "filename_ex_S":{
+    "message":"秒 例:59"
+  },
+  "captureType":{
+    "message":"撮影方法"
+  },
+  "captureType1":{
+    "message":"アクティブタブ"
+  },
+  "captureType2":{
+    "message":"アクティブタブ（ストリーム）"
+  },
+  "captureType3":{
+    "message":"選択ウィンドウ"
+  },
+  "captureType1_note":{
+    "message":"表示中のタブの表示領域をキャプチャーします。比較的画質が良いです。"
+  },
+  "captureType2_note":{
+    "message":"表示中のタブの表示領域をキャプチャーします。比較的速度が速いですが、条件によって画質が悪くなるケースが有ります。"
+  },
+  "captureType3_note":{
+    "message":"ウィンドウを選択してキャプチャーを行います。キャプチャー開始前にウィンドウ選択画面が表示されます。"
+  },
+  "reset":{
+    "message":"設定内容初期化"
+  },
+  "help_t_1" : {
+    "message":"1. アイコンクリック"
+  },
+  "help_d_1_1" : {
+    "message":"このアイコンをクリックすると撮影が開始します。"
+  },
+  "help_d_1_2" : {
+    "message":"「撮影方法」で「選択ウィンドウ」を選択している場合は下記のウィンドウが表示されます。この中から撮影を行いたいウィンドウを選択します。"
+  },
+  "help_d_1_image" : {
+    "message":"choose_ja.png"
+  },
+  "help_t_2" : {
+    "message":"2. 録画開始"
+  },
+  "help_d_2_1" : {
+    "message":"アイコンをクリックして録画が開始されると、アイコンが下記のように変化します。プログレスバーがいっぱいになると撮影が完了します。"
+  },
+  "help_t_3" : {
+    "message":"3. 録画終了"
+  },
+  "help_d_3_1" : {
+    "message":"録画が終了すると録画した内容をアニメーションgif画像に変換します。gif画像のファイルサイズが増えると、この変換処理にかかる時間も増える事に注意してください。"
+  },
+  "help_d_3_2" : {
+    "message":"上記のプログレスバーがいっぱいになるとgif画像のダウンロードが行われます。"
+  },
+  "help_t_4" : {
+    "message":"オプション設定"
+  },
+  "help_d_4_1" : {
+    "message":"アイコンを右クリックし、「オプション」をクリックするとオプション設定を行う画面に遷移します。"
+  },
+  "help_d_4_image" : {
+    "message":"option_ja.png"
+  }
+}

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Animated Gif Capture option setting</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/bootstrap-slider.css" />
+  <style>
+    body{
+      padding: 0;
+      margin: 0 auto;
+      background-color: #F5F0F0;
+    }
+    body *{
+      color: #00AAB5;
+    }
+    code{
+      color: #F5F0F0;
+      background-color: #00AAB5;
+    }
+    header h1, footer h1, section h1{
+      font-family: Helvetica, Arial, 'YuGothic', 'Yu Gothic', 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif;
+      margin: 0 0 70px;
+      font-size: 25px;
+      font-weight: 900;
+      border-bottom: 1px dotted #00AAB5;
+      letter-spacing: 0.1em;
+      padding-left: 40px;
+      background-image: url(images/icon_128_nobg.png);
+      background-repeat: no-repeat;
+      background-size: 26px;
+    }
+    footer{
+      width: 700px;
+      margin: 80px auto;
+    }
+    footer *{
+      font-size: 11px;
+    }
+    section{
+      padding: 40px 0;
+    }
+    section > *{
+      margin: 0 auto;
+      width: 700px;
+      margin-bottom: 100px;
+    }
+    section.options dd{
+      margin: 0 6px 12px 6px;
+    }
+    section.help {
+      padding-top: 80px;
+      background-color: #00AAB5;
+      border-top: 1px solid #008995;
+      border-bottom: 1px solid #FFF;
+    }
+    section.help h1{
+      border-bottom-color: #F5F0F0;
+    }
+    section.help *{
+      color: #F5F0F0;
+    }
+    section.help dt{
+      margin-bottom: 20px;
+      padding-left: 60px;
+    }
+    section.help dd{
+      margin-bottom: 40px;
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+    input.form-control, select.form-control{
+      color: #F41C54;
+    }
+    .form-group {
+      margin-bottom: 50px;
+    }
+    .tooltip-inner{
+      background-color: #F41C54;
+    }
+    .tooltip.top .tooltip-arrow{
+      border-top-color: #F41C54;
+    }
+    label.check{
+      font-weight: normal;
+    }
+  </style>
+</head>
+<body>
+  
+  <section class="options">
+    <div>
+      <h1>
+        <span data-i18n="extName">
+          Animated Gif Capture
+        </span>
+        <span data-i18n="optionPageTitle">
+          option setting
+        </span>
+      </h1>
+      
+      <form class="form-horizontal" role="form">
+
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-3 control-label" data-i18n="captureFramerate">Frame Rate</label>
+          <div class="col-sm-9">
+            <input class="slider" id="captureFrameRate" data-slider-id='ex1Slider' type="text" data-slider-step="1" data-slider-value="1" data-slider-tooltip="always" />
+          </div>
+          <div class="col-sm-6">
+            <label class="check">
+              <input type="checkbox" id="limitterForCaptureFrameRate"> <span data-i18n="captureFramerate_limit">Cancel the limitation.</span>
+            </label>
+            <p>
+              <small data-i18n="captureFramerate_note">This parameter is the number of shooting per-second. When Increasing the value of this parameter, the number of shots per second will increase. But the load on the PC will increase at the same time. Please note that if the performance of the PC is low.</small>
+            </p>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-3 control-label" data-i18n="captureSeconds">Recording Seconds</label>
+          <div class="col-sm-9">
+            <input class="slider" id="captureSeconds" data-slider-id='ex1Slider' type="text" data-slider-step="0.5" data-slider-value="2" data-slider-tooltip="always" />
+          </div>
+          <div class="col-sm-6">
+            <label class="check">
+              <input type="checkbox" id="limitterForCaptureSeconds"> <span data-i18n="captureSeconds_limit">Cancel the limitation.</span>
+            </label>
+            <p>
+              <small data-i18n="captureSeconds_note">This parameter is the recording time. When Increasing the value of this parameter, the recording time will increase. But the load on the PC will increase at the same time. Please note that if the performance of the PC is low.</small>
+            </p>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-3 control-label" data-i18n="scale">Capturing Image Size</label>
+          <div class="col-sm-6">
+            <input class="slider" id="scale" data-slider-id='ex1Slider' type="text" data-slider-step="0.1" data-slider-value="0.5" data-slider-tooltip="always" />
+          </div>
+          <div class="col-sm-6">
+            <label class="check">
+              <input type="checkbox" id="limitterForScale"> <span data-i18n="scale_limit">Cancel the limitation.</span>
+            </label>
+            <p>
+              <small data-i18n="scale_note">This parameter is adjusted value resolution of the gif image. When Increasing the value of this parameter, the resolution of the gif image will increase. But the load on the PC will increase at the same time. Please note that if the performance of the PC is low.</small>
+            </p>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-3 control-label" data-i18n="repeat">Repeat Count</label>
+          <div class="col-sm-3">
+            <input type="number" class="form-control" id="numLoop" name="quantity" min="1" max="1000" value="1">
+            <label class="check">
+              <input type="checkbox" id="loopForever"> <span data-i18n="repeat_forever">loop forever.</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-3 control-label" data-i18n="filename">File Name</label>
+          <div class="col-sm-6">
+            <input type="text" class="form-control" placeholder="filename" value="" id="filename">
+            <dl>
+              <dt>
+                <span data-i18n="filename_example">
+                  Example:
+                </span>
+              </dt>
+              <dd>
+                <code id="filenameFormatExample">{Y}{M}{D}-{H}{I}{S}_capture</code>
+                <br>
+                <span id="filenameExample">20140101-010203_capture.gif</span>
+              </dd>
+              <dt data-i18n="filename_directives">Directives</dt>
+              <dd>
+                <ul>
+                  <li>
+                    <code>{Y}</code> <span data-i18n="filename_ex_Y">Year. ex:2014</span>
+                  </li>
+                  <li>
+                    <code>{M}</code> <span data-i18n="filename_ex_M">Month. ex:01</span>
+                  </li>
+                  <li>
+                    <code>{D}</code> <span data-i18n="filename_ex_D">Day. ex:31</span>
+                  </li>
+                  <li>
+                    <code>{H}</code> <span data-i18n="filename_ex_H">Hours. ex:09</span>
+                  </li>
+                  <li>
+                    <code>{I}</code> <span data-i18n="filename_ex_M">Minutes. ex:59</span>
+                  </li>
+                  <li>
+                    <code>{S}</code> <span data-i18n="filename_ex_S">Seconds. ex:59</span>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-3 control-label" data-i18n="captureType">撮影方法</label>
+          <div class="col-sm-6">
+            <select class="form-control" id="captureType">
+              <option value="1" data-i18n="captureType1">Captures the currently active tab</option>
+              <option value="2" data-i18n="captureType2">Captures the currently active tab (use stream)</option>
+              <option value="3" data-i18n="captureType3">Captures the window in the selected</option>
+            </select>
+            <dl>
+              <dt data-i18n="captureType1">Captures the currently active tab</dt>
+              <dd data-i18n="captureType1_note">
+                Captures the visible area of the currently active tab. Image is relatively high quality.
+              </dd>
+              <dt data-i18n="captureType2">Captures the currently active tab (use stream)</dt>
+              <dd data-i18n="captureType2_note">
+                Captures the visible area of the currently active tab. It is a relatively fast.
+              </dd>
+              <dt data-i18n="captureType3">Captures the window in the selected</dt>
+              <dd data-i18n="captureType3_note">
+                Desktop Capture API that can be used to capture content of screen. Shows desktop media picker UI with the specified set of sources.
+              </dd>
+            </dl>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-3 control-label" data-i18n="reset">設定内容初期化</label>
+          <div class="col-sm-6">
+            <input type="button" class="btn btn-default" value="Reset" id="reset" />
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </section>
+  
+  <section class="help">
+    <div>
+      <h1>
+        <span data-i18n="helpTitle">
+          使い方
+        </span>
+      </h1>
+      <div>
+        <dl>
+          <dt data-i18n="help_t_1">1. アイコンクリック</dt>
+          <dd>
+            <img src="images/icon_normal.png" />
+            <p data-i18n="help_d_1_1">このアイコンをクリックすると撮影が開始します。</p>
+            <p data-i18n="help_d_1_2">「撮影方法」で「選択ウィンドウ」を選択している場合は下記のウィンドウが表示されます。この中から撮影を行いたいウィンドウを選択します。</p>
+            <img src="" width="400" data-i18nimage="help_d_1_image" />
+          </dd>
+
+          <dt data-i18n="help_t_2">2. 録画開始</dt>
+          <dd>
+            <img src="images/icon_rec_1.png" />
+            <img src="images/icon_rec_2.png" />
+            <p data-i18n="help_d_2_1">アイコンをクリックして録画が開始されると、アイコンが下記のように変化します。プログレスバーがいっぱいになると撮影が完了します。</p>
+          </dd>
+
+          <dt data-i18n="help_t_3">3. 録画終了</dt>
+          <dd>
+            <p data-i18n="help_d_3_1">録画が終了すると録画した内容をアニメーションgif画像に変換します。gif画像のファイルサイズが増えると、この変換処理にかかる時間も増え事に注意してください。</p>
+            <img src="images/icon_conv_1.png" />
+            <img src="images/icon_conv_2.png" />
+            <p data-i18n="help_d_3_2">上記のプログレスバーがいっぱいになるとgif画像のダウンロードが行われます。</p>
+            <img src="images/donwload.png" width="400" />
+          </dd>
+          <dt data-i18n="help_t_4">オプション設定</dt>
+          <dd>
+            <p data-i18n="help_d_4_1">アイコンを右クリックし、「オプション」をクリックするとオプション設定を行う画面に遷移します。</p>
+            <img src="" width="300" data-i18nimage="help_d_4_image" />
+          </dd>
+        </dl>
+
+
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <b>
+      <span data-i18n="extName">
+        Animated Gif Recorder
+      </span>
+    </b>
+    <span>
+    created by
+    </span>
+    <a href="http://demouth.net/">@demouth</a>
+    <p>
+      Credits:
+      <a href="https://github.com/antimatter15/jsgif">antimatter15/jsgif</a>
+      <a href="http://jquery.com/">jQuery</a>
+      <a href="https://github.com/seiyria/bootstrap-slider">seiyria/bootstrap-slider</a>
+    </p>
+  </footer>
+  <script src="../vendor/jquery/jquery-1.11.0.min.js"></script>
+  <script src="js/bootstrap-slider.js"></script>
+  <script src="../lib/Settings.js"></script>
+  <script src="../lib/SettingsLoader.js"></script>
+  <script src="../lib/FileNameFormatter.js"></script>
+  <script src="./options.js"></script>
+</body>
+</html>
