@@ -17,7 +17,6 @@
   "permissions": [
     "storage",
     "http://*/",
-    "tabs",
     "<all_urls>",
     "desktopCapture",
     "tabCapture"
